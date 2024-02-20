@@ -68,6 +68,7 @@ git tag : este comando nos sirve para nombrar o comentar el punto en el que esta
 git branch : con este codigo podemos ramificar nuestro proyecto osea hacer que desde ese punto puedas dividir el trabajo entre el principal y alguna funcion 
             que se este trabajando pero no quieras afectar lo principal 
             lo creas haciendo git branch login (login es ejempl0)
+            -d : este comando lo que hace es borrar una rama del proyecto principal
 
 git switch : si deseamos movernos en git para trabajar entre la rama principal o cualquier otra usamos este comando ej: git switch login
 
