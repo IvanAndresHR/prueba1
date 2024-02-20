@@ -1,0 +1,66 @@
+el terminal de git bash se abre desde el escritorio con click derecho
+
+Comandos:
+ls : muestra los archivos que estan donde estamos ubicados
+cd : ingresa a la carpeta o archivo indicado ej: cd Desktop/ y cd .. es para devolverme a la ubicacion anterior
+pwd : muestra la ruta de donde estamos ubicados
+mkdir : crear carpeta o archivos ej: mkdir "Hola mundo"
+code . : con este comando abre visual studio code 
+
+Configuracion inicial de git
+
+git config --global : para configurar todo
+    user.name "Onko" : asi llame mi nombre de usuario en git 
+    user.email "iandreshernandez@uniguajira.edu.co" : este es el correo que registre en git la cual tambien es mi cuenta de github
+
+touch : sirve para crear ficheros o archivos de diferentes extensiones
+
+git init : hacemos que desde este punto se comiencen a guardar y ejecutar git como tal 
+    cuando hacemos la carpeta donde estamos es la carpeta raiz del proyecto y por ser el usuario principal del proyecto nos llama 'master' o con el codigo
+    git branch -m admin : con este codigo podemos cambiar el nombre otorgado a gusto en esta caso paso de master a admin.
+
+git status : me muestra desde que perfiles han habido cambios o commits
+
+git add : es el comando que utilizaremos para ir guardadndo los archivos que queremos ir versionando en git ej: git add hellogit.py
+            asi el archivo ya le hayamos hecho commit toca subirlo con este comando cada vez que se haga algun cambio
+
+git commit : cuando usemos este comando es cuando realmente se crearan las versiones de los archivos antes subidos
+    cuando se haga esto se abrira el editor de codigo seleccionado al instalar (en mi caso es visual studio code) y debo poner un mensaje que represente ese commit
+    -m : si le añadimos esto al commit podemos ingresar el mensaje de confirmacion de una vez ej : git commit -m "primera version del proyecto"
+
+git log : este comando me permite ver todos los cambios realizados en mi proyecto
+
+git checkout :   si aun no hemos realizado otra version en git y queremos devolver el archivo a como lo teniamos(esto solo si lo habiamos modificado)
+                usamos este comando para devolver el archivo hasta el ultimo commit en el git
+            - si usamos este comando y le agregamos el hash de cualquier commit realizado podremos volver a ese punto y visualizar los archivos guardados
+            hasta ese punto
+            - si le agregamos el comando 'HEAD' luedgo de haber vuelto a algun commit anterior, esto hara que sigamos adelante desde este punto 
+            (es como reiniciar desde ese punto de guardado)
+
+git reset : este comando nos mostrara los archivos que hemos modificado despues del ultimo commit y que podremos restablecer a como estaba o guardarlo
+            - si le añadimos el '--hard' y tambien el hash de un commit podremos volver a ese punto de guardado y ademas eliminaremos todo lo que hicimos 
+            despues de eso (tomamos ese punto de guardado y eliminamos lo siguiente "solo usarlo si no volveran a utilizar esos commits")
+            si usamos nuevamente el reset --hard con el mismo hash podemos volver como si no hubieramos borrado nada
+
+//si utilizo muy seguido un codigo extenso puedo reducirlo a un alias o colocarle un apodo a ese extenso codigo y para eso usamos para crearlo
+
+git config --global alias.nombre "aqui ira descrito todo el codigo extenso que siempre utilizas(obviamente sin meter el comando git)" donde va nombre 
+    le asignamos el apodo a este codigo
+
+si tienes archivos que no realizaras un commit y no quieres te aparezca como archivo faltando al momento de hacer el commit haz lo siguiente
+    crea un archivo llamado gitignore
+        touch .gitignore
+    ahora dentro de ese archivo colocaras **/.junto al nombre del archivo que quieres que no aparezca en el commit y que no lo subiras a git
+        **/.Comandos_terminal_git
+/// posdata a mi no me sirvio no se porque
+
+git diff : sirve para visualizar que tanto hemos modificado desde la ultima version sin haber hecho un commit
+
+git reflog : este comando nos muestra todo el historial de movimientos que hemos realizado en nuestro proyecto desde el git init hasta la actualidad lo
+            cual nos permite volver a cualquier punto del proyecto asi hayamos usado el comando git reset --hard
+
+git tag : este comando nos sirve para nombrar o comentar el punto en el que estamos por ejemplo version 1.0 o dia 1 ejecutar obviamente va seguido de ese nombre
+
+
+
+
