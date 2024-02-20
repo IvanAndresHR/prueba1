@@ -23,6 +23,8 @@ git status : me muestra desde que perfiles han habido cambios o commits
 
 git add : es el comando que utilizaremos para ir guardadndo los archivos que queremos ir versionando en git ej: git add hellogit.py
             asi el archivo ya le hayamos hecho commit toca subirlo con este comando cada vez que se haga algun cambio
+         si despues del comando le agregamos un . esto agregara al git todos los archivos que no esten añadidos o actualizados en git
+
 
 git commit : cuando usemos este comando es cuando realmente se crearan las versiones de los archivos antes subidos
     cuando se haga esto se abrira el editor de codigo seleccionado al instalar (en mi caso es visual studio code) y debo poner un mensaje que represente ese commit
@@ -60,6 +62,13 @@ git reflog : este comando nos muestra todo el historial de movimientos que hemos
             cual nos permite volver a cualquier punto del proyecto asi hayamos usado el comando git reset --hard
 
 git tag : este comando nos sirve para nombrar o comentar el punto en el que estamos por ejemplo version 1.0 o dia 1 ejecutar obviamente va seguido de ese nombre
+         el nombre que se asigne junto a este tag servira como id para poder visualizar a traves del checkout sin necesidad del hash ej: git checkout tags/version1
+
+git branch : con este codigo podemos ramificar nuestro proyecto osea hacer que desde ese punto puedas dividir el trabajo entre el principal y alguna funcion 
+            que se este trabajando pero no quieras afectar lo principal 
+            lo creas haciendo git branch login (login es ejempl0)
+
+git switch : si deseamos movernos en git para trabajar entre la rama principal o cualquier otra usamos este comando ej: git switch login
 
 
 
