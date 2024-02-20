@@ -57,6 +57,7 @@ si tienes archivos que no realizaras un commit y no quieres te aparezca como arc
 /// posdata a mi no me sirvio no se porque
 
 git diff : sirve para visualizar que tanto hemos modificado desde la ultima version sin haber hecho un commit
+        - tambien nos sirve para ver que cambios hay entre ramas de un mismo proyecto
 
 git reflog : este comando nos muestra todo el historial de movimientos que hemos realizado en nuestro proyecto desde el git init hasta la actualidad lo
             cual nos permite volver a cualquier punto del proyecto asi hayamos usado el comando git reset --hard
@@ -70,6 +71,15 @@ git branch : con este codigo podemos ramificar nuestro proyecto osea hacer que d
 
 git switch : si deseamos movernos en git para trabajar entre la rama principal o cualquier otra usamos este comando ej: git switch login
 
+git merge : este codigo es para unir los archivos y codigos que hayan entre diferentes ramas del proyecto
+            se pueden presentar fallos de merge si por alguna razon ambos lados modifican el mismo archivo en la misma linea de codigo
+            dependiendo si se decide dejar el cambio propio o el del otro grupo toca subir con git add nuevamente ese archivo y ahi si hacer commit 
+            y guardar los cambios
 
+git stash : con este codigo puedes hacer un guardado temporal sin necesidad de hacer commit (utilizado por si necesitas pasarte a otra rama de trabajo y
+            no tienes finalizado tu trabajo como para hacer commit)
+            pop: para restaurar ese guardado temporal vuelves y usas el comando y le agregas el pop para que te muestre lo que estabas trabajando
+            ej: git stash pop
+            drop: si usamos este comando borramos los stash guardados 
 
 
