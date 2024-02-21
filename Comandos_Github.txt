@@ -1,0 +1,11 @@
+para vincular el trabajo que lleves en git con un repositorio en github deberas copiar un comando que al crear el repositorio el mmismo te dara
+
+git remote... con este comando podras vincular el repositorio junto al proyecto
+
+git push -u origin ADMIN : con este comando luego de vincular el repositorio de github con el proyecto lo que hacemos es subir la informacion que tenemos
+
+git fetch : descarga el historial de los cambios que han habido en el proyecto y se han subido a github pero solo te muestra que se a cambiado sin 
+            descargar esos cambios
+
+git pull : descarga el historial de cambios con los cambios hechos
+
