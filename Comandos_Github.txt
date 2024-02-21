@@ -3,9 +3,37 @@ para vincular el trabajo que lleves en git con un repositorio en github deberas 
 git remote... con este comando podras vincular el repositorio junto al proyecto
 
 git push -u origin ADMIN : con este comando luego de vincular el repositorio de github con el proyecto lo que hacemos es subir la informacion que tenemos
+        - tambien usamos este comando para subir cada commit que hagamos al repositorio en github
 
 git fetch : descarga el historial de los cambios que han habido en el proyecto y se han subido a github pero solo te muestra que se a cambiado sin 
             descargar esos cambios
 
 git pull : descarga el historial de cambios con los cambios hechos
+
+git clone : si deseamos trabajar con un repositorio y no tenemos los archivos y deseamos bajarlo lo ideal es ir al repositorio y lo descargamos a traves
+            de este comando 
+            vamos al repositorio
+            damos clic en code
+            seleccionamos ssh y copiamos el codigo que nos sale
+            nos ubicamos en el bash de git justo donde deseamos descargar el archivo sea el escritorio o cualquier parte 
+            dijitamos el comando y junto le pegamos el codigo ssh y listo se descargara
+
+github fork : github nos permite tomar un repositorio ajeno y copiarlo como un repositorio propio en tus proyectos
+            para esto debes ir al repositorio del proyecto que quieras tomar
+            y en la parte superior derecha junto a la estrella esta la opcion fork 
+            completa la imformacion que piden y acepta
+            de esta forma puedo tomar cualquier proyecto que este en github de alguien mas y bajarlo y poder modificarlo sin afectar el original
+
+de esta menera si hacemos cambios podemos notificarlos al creador original y pedir lo agrege
+
+github PULL REQUEST : cuando estas en el repositorio que tomaste de alguien mas en la seccion principal del repositorio nos informara si se han hecho cambios
+                    del proyecto original (aparace un chulito junto a la palabra sync osea sincronizado al original) y al lado nos sale pull request osea
+                    si queremos que los cambios que hicimos (los commit) sean tomados en cuenta por el creador o quien dirije el proyecto, se le hace un 
+                    comentario del cambio y el principal decidira luego de ver tus cambios si agregarlos o no.
+
+                    ahora si eres el usuario principal podras revisar los cambios que tus colaboradores quieren hacer y 
+                        comentar su cambio sin añadirlo
+                        aprovar el cambio. Si los apruebas te toca hacer un merge de los cambios y agregarlos al proyecto original
+                        solicitar cambios a lo que agrego y ay si unirlo
+
 
